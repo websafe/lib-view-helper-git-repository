@@ -1,0 +1,17 @@
+<?php
+/**
+ * Enable Websafe\View\Helper\Git\Repository view helpers in Your application.
+ * 
+ * Copy this file to:
+ *  `config/autoload/websafe.view.helper.git.repository.global.php`.
+ * 
+ */
+
+return array(
+    'view_helpers' => array(
+        'invokables' => array(
+            'gitRepoCurrentBranch'
+                => 'Websafe\View\Helper\Git\Repository\CurrentBranch',
+        ),
+    ),
+);
