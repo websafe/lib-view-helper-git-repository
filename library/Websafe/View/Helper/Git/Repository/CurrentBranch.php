@@ -42,12 +42,13 @@ class CurrentBranch extends AbstractHelper
                 // and if the pointer was initialized with success
                 // try to read the first line from self::HEAD_LOCATION:
                 if (false !== ($line = fgets($fp, self::MAX_LINE_LENGHT))) {
+                    fclose($fp);
                     // strip 'ref: refs/heads/' and return the branch name:
                     return trim(str_replace('ref: refs/heads/', '', $line));
                 }
             }
         }
-
+        //
         return null;
     }
 }
