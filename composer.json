@@ -1,0 +1,45 @@
+{
+    "name": "websafe/lib-view-helper-git-repository",
+    "description": "A ZF2 View Helper library for accessing basic info from current projects local Git repository.",
+    "type": "library",
+    "homepage": "http://github.com/websafe/lib-view-helper-git-repository/",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "zf2",
+        "local",
+        "Git",
+        "repository",
+        "view helper",
+        "plugin",
+        "info",
+        "Zend",
+        "View",
+        "Helper",
+        "AbstractHelper"
+    ],
+    "authors": [
+        {
+            "name": "Thomas Szteliga",
+            "email": "ts@websafe.pl"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.3.3",
+        "zendframework/zend-view": "*"
+    },
+    "require-dev": {
+        "fabpot/php-cs-fixer": "*@dev"
+    },
+    "autoload": {
+        "psr-0": {
+            "Websafe\\": "library/"
+        }
+    },
+    "support": {
+        "email": "ts@websafe.pl",
+        "issues": "https://github.com/websafe/lib-view-helper-git-repository/issues",
+        "irc": "irc://irc.freenode.net/zftalk",
+        "source": "https://github.com/websafe/lib-view-helper-git-repository"
+    }
+}
