@@ -61,6 +61,9 @@ return array(
 ### Use provided view helpers in your view scripts
 
 
+
+#### Websafe\View\Helper\Git\Repository\CurrentBranch
+
 ~~~~ php
 <h1><?php echo $this->gitRepoCurrentBranch();?></h1>
 ~~~~
@@ -72,6 +75,20 @@ Result:
 <h1>master</h1>
 ~~~~
 
+
+
+####  Websafe\View\Helper\Git\Repository\Description
+
+~~~~ php
+<p><?php echo $this->gitRepoDescription();?><p>
+~~~~
+
+
+Result:
+
+~~~~ html
+<p>Unnamed repository; edit this file 'description' to name the repository.</p>
+~~~~
 
 
 
