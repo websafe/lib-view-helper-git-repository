@@ -36,6 +36,11 @@
             "Websafe\\": "library/"
         }
     },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
+    },
     "support": {
         "email": "ts@websafe.pl",
         "issues": "https://github.com/websafe/lib-view-helper-git-repository/issues",
