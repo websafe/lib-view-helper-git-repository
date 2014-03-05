@@ -48,6 +48,8 @@ return array(
         'invokables' => array(
             'gitRepoCurrentBranch'
                 => 'Websafe\View\Helper\Git\Repository\CurrentBranch',
+            'gitRepoDescription'
+                => 'Websafe\View\Helper\Git\Repository\Description',
         ),
     ),
 );
