@@ -19,7 +19,7 @@ class Description extends AbstractHelper
     /**
      * Default location of `.git/description`
      */
-    const DESCRIPTION_LOCATION = '.git/description';
+    const DESCRIPTION_PATH = '.git/description';
 
     /**
      * Retrieve the description of the current local repository, if any.
@@ -31,10 +31,10 @@ class Description extends AbstractHelper
     public function __invoke()
     {
         // When self::DESCRIPTION_LOCATION is a file and is readable:
-        if (is_readable(self::DESCRIPTION_LOCATION)
-            && is_file(self::DESCRIPTION_LOCATION)) {
+        if (is_readable(self::DESCRIPTION_PATH)
+            && is_file(self::DESCRIPTION_PATH)) {
             // Try to get its content:
-            if (false !== ($c = file_get_content(self::DESCRIPTION_LOCATION))) {
+            if (false !== ($c = file_get_contents(self::DESCRIPTION_PATH))) {
                 // and return the content:
                 return $c;
             }

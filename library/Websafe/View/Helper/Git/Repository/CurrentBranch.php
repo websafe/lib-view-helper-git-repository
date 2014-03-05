@@ -19,12 +19,12 @@ class CurrentBranch extends AbstractHelper
     /**
      * Default location of .git/HEAD
      */
-    const HEAD_LOCATION = '.git/HEAD';
+    const HEAD_PATH = '.git/HEAD';
 
     /**
-     * Default maximum length og line in HEAD_LOCATION containing the
+     * Default maximum length og line in HEAD_PATH containing the
      */
-    const MAX_LINE_LENGHT = 1024;
+    const MAX_LINE_LENGTH = 1024;
 
     /**
      * Retrieve the current branch, if any.
@@ -36,12 +36,12 @@ class CurrentBranch extends AbstractHelper
     public function __invoke()
     {
         // When self::HEAD_LOCATION is a file and is readable:
-        if (is_readable(self::HEAD_LOCATION) && is_file(self::HEAD_LOCATION)) {
+        if (is_readable(self::HEAD_PATH) && is_file(self::HEAD_PATH)) {
             // Try to initialize a file pointer resource:
-            if (false !== ($fp = @fopen(self::HEAD_LOCATION, 'r'))) {
+            if (false !== ($fp = @fopen(self::HEAD_PATH, 'r'))) {
                 // and if the pointer was initialized with success
                 // try to read the first line from self::HEAD_LOCATION:
-                if (false !== ($line = fgets($fp, self::MAX_LINE_LENGHT))) {
+                if (false !== ($line = fgets($fp, self::MAX_LINE_LENGTH))) {
                     fclose($fp);
                     // strip 'ref: refs/heads/' and return the branch name:
                     return trim(str_replace('ref: refs/heads/', '', $line));
