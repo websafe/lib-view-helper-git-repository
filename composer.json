@@ -1,6 +1,6 @@
 {
     "name": "websafe/lib-view-helper-git-repository",
-    "description": "A library of ZF2 - View Helpers for retrieving information about current application's local Git repository.",
+    "description": "A library of ZF2 View Helpers for retrieving information about current application's local Git repository.",
     "type": "library",
     "homepage": "http://github.com/websafe/lib-view-helper-git-repository/",
     "license": "BSD-3-Clause",
