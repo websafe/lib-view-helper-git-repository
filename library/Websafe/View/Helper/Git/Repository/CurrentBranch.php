@@ -22,7 +22,7 @@ class CurrentBranch extends AbstractHelper
     const HEAD_PATH = '.git/HEAD';
 
     /**
-     * Default maximum length og line in HEAD_PATH containing the
+     * Default maximum length of line containing the branch name in HEAD_PATH.
      */
     const MAX_LINE_LENGTH = 1024;
 
