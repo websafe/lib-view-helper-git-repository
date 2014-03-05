@@ -29,7 +29,7 @@ class CurrentBranch extends AbstractHelper
     /**
      * Retrieve the current branch, if any.
      *
-     * If `.git/HEAD` is not available or nor readable, returns null.
+     * If `.git/HEAD` is not available or not readable, returns null.
      *
      * @return string|null
      */
